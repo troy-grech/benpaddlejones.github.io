@@ -1,0 +1,430 @@
+* {
+  margin: 0;
+  padding: 0;
+  }
+
+body {
+  font-size:100%;
+  font-family: Arial,'Lucida Grande',Verdana,sans-serif;
+  text-align:center;
+  background:#002400 url(images/background.gif) no-repeat top center;
+}
+
+#page {width:992px; margin:0px auto; text-align:center;}
+
+#header {
+  height:189px;
+  width:992px;
+  background:url(images/topbg.gif);
+  text-align:left;
+}
+
+#logo {
+  text-align:left;
+  letter-spacing:-2px;
+  text-shadow:0px 0px 8px #000;
+  font:48px Georgia, Arial, "Times New Roman", Times;
+  margin-left:18px;
+  margin-top:94px;
+  color:#FFF;
+  width:439px;
+  height:95px;
+  float: left;
+}
+
+/* note 
+Schoolwebsite: 
+    logo width:294px;
+    nav   width:680px;
+	nav-menu   width:680px;
+
+benpaddlejones:
+    logo width:439px;
+    nav   width:535px;
+	nav-menu   width:535px;
+*/
+
+.green {
+color:#AEF080;
+}
+
+#slogan {
+  text-align:left;
+  margin-left:100px;
+  font:14px Arial, "Times New Roman", Times;
+  letter-spacing:0px;
+  color:#FFF;
+}
+
+/* TOP NAVIGATION BAR */
+#nav {
+  width:535px;
+  float:left;
+  margin-top:136px;
+  height:53px;  
+}
+
+ #nav-menu {
+	background: url(images/navbar-bg.gif) repeat-x top left;
+  	border-top-left-radius: 24px;
+  	border-top-right-radius: 24px;
+	height: 53px;
+	width: 535px;
+	position: absolute;	
+}
+
+#menu-bar {
+	width: 100%;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	height: 53px;
+	line-height: 100%;
+	position: absolute;
+	z-index: auto;
+}
+
+#menu-bar li {
+  margin: 7px 0px 0px 18px;
+  padding: 6px 0px 0px 0px;
+  float: left;
+  position: relative;
+  list-style: none;
+}
+
+#menu-bar a {
+  font-weight: bold;
+  font-family: arial;
+  font-style: normal;
+  font-size: 18px;
+  color: #E7E5E5;
+  text-decoration: none;
+  display: block;
+  padding: 6px 15px 6px 15px;
+  margin: 0;
+  margin-bottom: 6px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  text-shadow:0px 0px 8px #000000;
+}
+
+#menu-bar li ul li a {
+  margin: 0;
+}
+
+#menu-bar .active a, #menu-bar li:hover > a {
+  background: #EBEBEB;
+  background: linear-gradient(top,  #EBEBEB,  #A1A1A1);
+  background: -ms-linear-gradient(top,  #EBEBEB,  #A1A1A1);
+  background: -webkit-gradient(linear, left top, left bottom, from(#EBEBEB), to(#A1A1A1));
+  background: -moz-linear-gradient(top,  #EBEBEB,  #A1A1A1);
+  color: #444444;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+  text-shadow:0px 0px 8px #FFFFFF;
+}
+
+#menu-bar ul li:hover a, #menu-bar li:hover li a {
+  border: none;
+  -box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+
+#menu-bar ul a:hover {
+  background: #2e650d !important;
+  color: #FFFFFF !important;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  text-shadow:0px 0px 8px #FFFFFF;
+}
+
+#menu-bar li:hover > ul {
+  display: block;
+}
+
+#menu-bar ul {
+  background: #DDDDDD;
+  background: linear-gradient(top,  #FFFFFF,  #CFCFCF);
+  background: -ms-linear-gradient(top,  #FFFFFF,  #CFCFCF);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#CFCFCF));
+  background: -moz-linear-gradient(top,  #FFFFFF,  #CFCFCF);
+  display: none;
+  margin: 0;
+  padding: 0;
+  width: 185px;
+  position: absolute;
+  top: 36px;
+  left: 0;
+  border: solid 1px #B4B4B4;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 3px #222222;
+  -moz-box-shadow: 2px 2px 3px #222222;
+  box-shadow: 2px 2px 3px #222222;
+}
+
+#menu-bar ul li {
+  float: none;
+  margin: 0;
+  padding: 0;
+}
+
+#menu-bar ul a {
+  padding: 6px 0px 6px 15px;
+  color:#424242 !important;
+  font-size:12px;
+  font-style:normal;
+  font-family:arial;
+  font-weight: normal;
+  text-shadow:0px 0px 8px #FFFFFF;
+}
+
+#menu-bar ul li:nth-child(N+1) > a {
+	background: none;
+	box-shadow: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+	border-top: none;
+}
+
+#menu-bar ul li:nth-child(2) > a {
+  border-top-left-radius: 10px;
+  -webkit-border-top-left-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  border-top-right-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topright: 10px;
+}
+
+#menu-bar ul li:last-child > a {
+  border-bottom-left-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-bottom-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+}
+
+#menu-bar:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+ }
+ 
+ #menu-bar {
+  display: inline-block;
+ }
+ 
+  html[xmlns] #menu-bar {
+  display: block;
+ }
+ 
+ * html #menu-bar {
+  height: 1%;
+ }
+
+
+/* END NAVIGATION BAR */
+
+/* Large header image of grass and flower, with slogans */
+#header2 {
+  background:url(images/header.jpg) no-repeat top left;
+  border-top-left-radius: 24px;
+  width:992px;
+  height:224px;
+  text-shadow:1px 1px 1px #000;
+}
+
+#header2-slogan1 {
+  font:48px Georgia, Arial, "Times New Roman", Times;
+  padding:68px 0px 0px 106px;
+  color:#FFF;
+  text-align:left;
+  letter-spacing:-2px;
+}
+
+#header2-slogan2 {
+  font:48px Georgia, Arial, "Times New Roman", Times;
+  padding:0px 0px 0px 267px;
+  color:#FFF;
+  text-align:left;
+  letter-spacing:-2px;
+}
+/* end large header */
+
+/* clears all floated elements */
+.clearfloats {
+  clear:both;
+}
+/* end clear floats */
+
+/* first content section, lighter green area */
+
+#content {
+  background:#2E650D url(images/body-bg.gif) no-repeat top left;
+  width:992px;
+  min-height:270px;
+  text-align:left;
+  padding-top:35px;
+  padding-bottom:20px;
+}
+
+.content-nonindex {
+  border-top-left-radius: 24px;
+}
+
+.content-padding {
+  padding:0px 20px 0px 20px;
+}
+
+.content-padding a {
+  font:16px Arial, "Times New Roman", Times;
+  color:#CEFF9F;
+  text-shadow:1px 1px 1px #104D00;
+}
+
+.content-padding a:hover {
+  font:16px Arial, "Times New Roman", Times;
+  color:#FFF;
+  text-decoration:none;
+  text-shadow:0px 0px 3px #FF0000;
+}
+
+#content h1 {
+  font:36px Georgia, Arial, "Times New Roman", Times;
+  color:#FFF;
+  padding-bottom:10px;
+  text-shadow:1px 1px 2px #000;
+}
+
+#content p {
+	font: 16px Arial, "Times New Roman", Times;
+	color: #FFF;
+	text-align: left;
+	padding-bottom: 10px;
+	font-family: Arial, "Times New Roman", Times;
+}
+
+#content ul {
+	list-style-image: url(images/list-arrow.gif);
+	background: #1D5600;
+	font-family: Arial, "Times New Roman", Times;
+	margin-left : 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 35px;
+	color: #FFF;
+	text-align: left;
+	padding-bottom: 10px;
+	line-height: 200%;
+}
+
+#content ol {
+	background: #1D5600;
+	font-family: Arial, "Times New Roman", Times;
+	margin-left : 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 35px;
+	color: #FFF;
+	text-align: left;
+	padding-bottom: 10px;
+	line-height: 200%;
+}
+
+/* end content 1 section */
+
+
+/* image that divides the two different colored content sections */
+#body-divider {
+  background:#1D5600 url(images/body-divider.gif) no-repeat top left;
+  width:992px;
+  height:23px;
+}
+
+/* end content divider */
+
+/* darker green content section, "content 2" */
+#content2 {
+  width:992px;
+  min-height:250px;
+  background:#1D5600;
+  text-align:left;
+  padding-top:10px;
+  padding-bottom:30px;
+}
+
+#content2 p {
+  font:16px Arial, "Times New Roman", Times;
+  color:#FFF;
+  text-align:justify;
+  padding-bottom:10px;
+}
+
+#content2 h2,h3,h4,h5,h6 {
+  background:#1D5600 url(images/headline-arrow.gif) no-repeat top left;
+  font:normal 25px serif, "Times New Roman", Times;
+  line-height:25px;
+  color:#FFF;
+  text-shadow:1px 1px 2px #000;
+  padding-bottom:10px;
+  padding-left:30px;
+}
+
+.content2-block {
+  width:274px;
+  float:left;
+}
+
+.content2-block p {
+  width:274px; 
+  float:left;
+  text-align:left;
+}
+
+  /* three column area, vertical dotted divider */
+  .content-divider {
+    background:url(images/content-divider.gif) no-repeat top center;
+    width:2px;
+    height:274px;
+    float:left;
+    padding:0px 30px 0px 30px; 
+  }
+  /* end divider */
+
+/* end content 2 */
+
+
+/* footer of page */
+#footer-div {
+  background:url(images/footer-div.gif) no-repeat top left;
+  width:992px;
+  height:6px;
+}
+
+#footer {
+  padding-top:15px;
+  width:992px;
+  height:150px;
+  background:#001800;
+  text-align:center;
+}
+
+#footer p {
+  font:12px Arial, "Times New Roman", Times;
+  color:#FFF;
+}
+
+#footer a {
+  font:12px Arial, "Times New Roman", Times;
+  color:#FFF;
+}
+/* end footer */

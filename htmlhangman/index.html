@@ -1,0 +1,77 @@
+<html> 
+	<head> 
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+		<title>Play Hangman!</title>
+		<style> 
+			#Screen {
+				height: 100%;
+				width: 100%;
+				position: absolute;
+				font-family: Verdana;
+				font-weight: bold;
+				top: 0;
+				left: 0;
+				font-size: 4vmin
+			}
+			 
+			#msg {
+				background-color: #EEEEEE;
+				border: 2px solid black;
+				color: #0000EE;
+				display: none;
+				left: 65%;
+				padding: 8px;
+				position: fixed;
+				width: 100%;
+				line-height: 100%;
+				right: 0px;
+			} 
+		</style> 
+	</head> 
+ <body>
+	<script src="script.js"></script>	
+	<p>&nbsp;</p>
+	<div id="screen">
+		<div id="msg"> 
+				
+		</div>
+		<div id="links">
+			<p><a href="#" 
+			 onclick="show('msg');"> 
+			 click here to play... 
+			 </a></p>
+			 <ul>
+                 <li><a href="#" 
+                 onclick="rewritehtml('first');"> 
+                 click here to guess the first letter... 
+                 </a></li> 
+                 <li><a href="#" 
+                 onclick="rewritehtml('second');"> 
+                 click here to guess the second letter... 
+                 </a></li>
+                 <li><a href="#" 
+                 onclick="rewritehtml('third');"> 
+                 click here to guess the third letter... 
+                 </a></li>
+                 <li><a href="#" 
+                 onclick="rewritehtml('forth');"> 
+                 click here to guess the forth letter... 
+                 </a></li>
+                 <li><a href="#" 
+                 onclick="rewritehtml('fifth');"> 
+                 click here to guess the fifth letter... 
+                 </a></li>
+             </ul>
+			<p><a href="#" 
+			 onclick="firsthint();"> 
+			 Please give me a hint! 
+			 </a></p> 
+			 <p><a href="#" 
+			 onclick="secondhint();"> 
+			 I need a different type of hint! 
+			 </a></p> 
+		</div>	
+	</div>
+ </body> 
+
+ </html> 

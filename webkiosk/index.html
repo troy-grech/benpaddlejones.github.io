@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=10" />
+<title>Web Display Kiosk</title>
+<script>
+ // Variable holding value of timer
+var timer = 0
+
+// opens new tab (hit F11 to full screen) then loads pages in order, page displayed for duration
+//   in milliseconds (ie 10000 = 10 seconds) on the line BELOW the URL.
+setTimeout(function(){ window.open('http://www.benpaddlejones.com','_newtab') }, timer);
+timer = timer + 10000
+setTimeout(function(){ window.open('http://www.google.com.au','_newtab') }, timer);
+timer = timer + 10000
+setTimeout(function(){ window.open('http://www.dec.nsw.gov.au/','_newtab') }, timer);
+timer = timer + 10000
+
+
+ // Reloads this page in original tab creating a loop, on loop pages will continue to load in original _newtab
+setTimeout(function(){ window.open('http://10.15.212.47:81/10XIST/benjamin.jones21/index.html','_self') }, timer);		
+
+</script>
+</head>
+<body>
+</body>
+</html>
