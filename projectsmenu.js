@@ -4,3 +4,4 @@ document.write("<li><a href=\"webkiosk/index.html\" target=\"_blank\">Web Kiosk<
 document.write("<li><a href=\"input1-10game/index.html\" target=\"_blank\">Input based, guess a number</a></li>");
 document.write("<li><a href=\"htmlhangman/index.html\" target=\"_blank\">HTML based, Hangman</a></li>");
 document.write("<li><a href=\"myplatformer/index.html\" target=\"_blank\">Quintus Lib, Platformer</a></li>");
+document.write("<li><a href=\"https://play.google.com/store/apps/details?id=com.penpaddlejones.platformer\" target=\"_blank\">Android Game</a></li>");

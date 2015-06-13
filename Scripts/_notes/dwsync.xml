@@ -17,4 +17,7 @@
 <file name="expressInstall.swf" server="D:/Shares/Website/" local="130344078270000000" remote="130344078270000000" Dst="2" />
 <file name="jquery.js" server="D:/Shares/Website/" local="130344921680000000" remote="130344921680000000" Dst="2" />
 <file name="swfobject_modified.js" server="D:/Shares/Website/" local="130344078270000000" remote="130344078270000000" Dst="2" />
+<file name="expressInstall.swf" server="//192.168.1.11/web/website/" local="130344078280000000" remote="130344078280000000" Dst="1" />
+<file name="jquery.js" server="//192.168.1.11/web/website/" local="130344921680000000" remote="130344921680000000" Dst="1" />
+<file name="swfobject_modified.js" server="//192.168.1.11/web/website/" local="130344078280000000" remote="130344078280000000" Dst="1" />
 </dwsync>
